@@ -1,0 +1,32 @@
+:root {
+  --spinner-css-color: #000;
+  --spinner-css-duration: 1s;
+  --spinner-css-position: fixed;
+  --spinner-css-size: 2rem;
+  --spinner-css-thickness: 0.25rem;
+}
+
+.spinner-css {
+  animation: spin var(--spinner-css-duration) linear infinite;
+  border: var(--spinner-css-thickness) solid var(--spinner-css-color);
+  border-bottom: var(--spinner-css-thickness) solid rgba(0,0,0,0);
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: var(--spinner-css-size);
+  left: calc(50% - 0.5 * var(--spinner-css-size));
+  position: var(--spinner-css-position);
+  transform-origin: center;
+  top: calc(50% - 0.5 * var(--spinner-css-size));
+  width: var(--spinner-css-size);
+  z-index: 9999;
+}
+
+.spinner-css--hidden {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

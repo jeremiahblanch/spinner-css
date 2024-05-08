@@ -1,0 +1,23 @@
+{
+  "name": "spinner-css",
+  "version": "1.0.0",
+  "description": "Simple CSS only spinner configurable with CSS variables",
+  "main": "spinner.css",
+  "scripts": {
+    "publish-to-npm": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremiahblanch/tiny-spinner.git"
+  },
+  "keywords": [
+    "spinner",
+    "css"
+  ],
+  "author": "Jeremiah Blanch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremiahblanch/tiny-spinner/issues"
+  },
+  "homepage": "https://github.com/jeremiahblanch/tiny-spinner#readme"
+}

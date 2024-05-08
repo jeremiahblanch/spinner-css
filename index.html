@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Spinner</title>
+    <link rel="stylesheet" href="spinner.css">
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+        .crossed::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          right: 50%;
+          border-left: 1px #000 solid;
+        }
+
+        .crossed::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          bottom: 50%;
+          left: 0;
+          right: 0;
+          border-top: 1px #000 solid;
+        }
+
+        .container-pink-large {
+          --tiny-spinner-size: 4rem;
+          --tiny-spinner-thickness: 1rem;
+          --tiny-spinner-color: pink;
+          --tiny-spinner-position: absolute;
+          
+          border: 1px solid pink;
+          height: 10rem;
+          position: relative;
+          width: 20rem;
+        }
+
+        .container-gold-huge {
+          --tiny-spinner-size: 8rem;
+          --tiny-spinner-thickness: 2rem;
+          --tiny-spinner-color: gold;
+          --tiny-spinner-position: absolute;
+          
+          border: 1px solid gold;
+          height: 20rem;
+          position: relative;
+          width: 20rem;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="tiny-spinner"></div>
+
+    <div class="container-pink-large crossed">
+      <p>Huge pink spinner inside this box</p>
+      <div class="tiny-spinner"></div>
+    </div>
+
+    <div class="container-gold-huge crossed">
+      <p>Huge gold spinner inside this box</p>
+      <div class="tiny-spinner"></div>
+    </div>
+
+  </body>
+</html>
